@@ -181,7 +181,7 @@ def index():
             input_list.append(symptom_present)
         
         blank_df = pd.DataFrame(columns=symptom_list)
-        blank_df.loc[len(pdf)] = input_list
+        blank_df.loc[len(blank_df)] = input_list
         answer = learn.predict(blank_df.iloc[0])
         return '''<h1>The prediction value is: {}</h1>'''.format(answer)
 
