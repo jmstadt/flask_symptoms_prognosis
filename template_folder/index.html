@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+  
+<html> 
+<head> 
+    <title>For loop in Flask</title> 
+</head> 
+<body> 
+  
+<form method="post">
+	{%for i in range(0, len)%}
+	<li>{{symptom_list[i]}}</li>
+	<input type="number" name={{symptom_list[i]}} step=1 min=0 max =1 value="0"><br>
+	{% endfor %}
+	<input type="submit">
+	</form>
+
+  
+</body> 
+</html>
